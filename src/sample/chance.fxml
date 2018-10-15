@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="75.0" prefWidth="600.0">
+         <children>
+            <Label text="Roulette">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Label>
+            <Label text="Guess what number the ball will land on, or if it will be even or odd!" />
+         </children>
+      </VBox>
+      <HBox alignment="TOP_CENTER" prefHeight="22.0" prefWidth="600.0">
+         <children>
+            <Label text="Points: " />
+            <Label fx:id="lblPoints" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="65.0" prefWidth="600.0" spacing="15.0">
+         <children>
+            <Button fx:id="btnPickNum" mnemonicParsing="false" onAction="#pickNum" text="Pick Number" />
+            <TextField fx:id="textNum" promptText="Number" />
+         </children>
+      </HBox>
+      <HBox alignment="TOP_CENTER" prefHeight="33.0" prefWidth="600.0" spacing="50.0">
+         <children>
+            <Button fx:id="btnEven" mnemonicParsing="false" onAction="#even" text="Even" />
+            <Button fx:id="btnOdd" mnemonicParsing="false" onAction="#odd" text="Odd" />
+         </children>
+      </HBox>
+      <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="lblMessage" text="placeholder text" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
